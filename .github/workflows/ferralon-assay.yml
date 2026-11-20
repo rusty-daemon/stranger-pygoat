@@ -36,6 +36,8 @@ jobs:
           # hand-picked test cases, not advisory coverage).
           advisory-corpus-repo: ferralon-ai/vulnerability-corpus
           advisory-corpus-policy: full
+          corpus-signer-identity: ferralon-intel-publisher@ferralon.iam.gserviceaccount.com
+          corpus-signer-issuer: https://accounts.google.com
 
       # The Action materializes report.sarif.json; the upload to code scanning is this
       # step, so drop it and the `code-scanning` surface produces a file and nothing else.
