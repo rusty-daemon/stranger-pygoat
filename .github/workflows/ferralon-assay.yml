@@ -35,6 +35,7 @@ jobs:
           # Omit it and the scan falls back to a small built-in table (a few
           # hand-picked test cases, not advisory coverage).
           advisory-corpus-repo: ferralon-ai/vulnerability-corpus
+          advisory-corpus-policy: full
 
       # The Action materializes report.sarif.json; the upload to code scanning is this
       # step, so drop it and the `code-scanning` surface produces a file and nothing else.
