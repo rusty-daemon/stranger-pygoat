@@ -1,0 +1,12 @@
+name: Check checkout hooks
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  look:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls -la .git/hooks || echo "no hooks directory"
+      - run: git --version
