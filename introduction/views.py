@@ -457,7 +457,7 @@ def cmd_lab2(request):
             
             print(val)
             try:
-                output = eval(val)
+                output = int(val)
             except:
                 output = "Something went wrong"
                 return render(request,'Lab/CMD/cmd_lab2.html',{"output":output})

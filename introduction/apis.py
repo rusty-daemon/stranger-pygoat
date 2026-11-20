@@ -10,7 +10,7 @@ from introduction.playground.A6.utility import check_vuln
 from introduction.playground.A9.main import Log
 from introduction.playground.ssrf import main
 
-from .utility import *
+from .utility import ssrf_code_converter, ssrf_html_input_extractor
 from .views import authentication_decorator
 
 
